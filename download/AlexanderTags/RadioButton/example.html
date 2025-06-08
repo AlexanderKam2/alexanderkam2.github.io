@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioButton example | Alexander Tags</title>
+    <script src="https://alexanderkam2.github.io/download/AlexanderTags/RadioButton/script.js"></script>
+    <style>
+        body {
+            color: #000;
+            background-color: #fff;
+        }
+
+        .main {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #EAEAEA;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>RadioButton</h3>
+        <radio selected="0" label="Select language: " id="radiobutton-1">
+            <radiobutton label="JavaScript"></radiobutton>
+            <radiobutton label="Python"></radiobutton>
+            <radiobutton label="PHP"></radiobutton>
+        </radio>
+        <button onclick="checkRadio()">Check</button>
+    </div>
+    <script>
+        function checkRadio() {
+            const radiovalue = getRadioValue('radiobutton-1');
+            const values = ["JavaScript", "Python", "PHP"];
+            alert("Selected: " + values[radiovalue]);
+        }
+    </script>
+</body>
+</html>
