@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #0D1F23;
+            color: #afb3b7;
+            font: 20px Consolas;
+            margin-left: 4px;
+        }
+
+        code {
+            font: 20px Consolas;
+        }
+
+        pre {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <code>
+        <pre>&lt;!DOCTYPE html&gt;</pre>
+        <pre>&lt;html lang=&quot;en&quot;&gt;</pre>
+        <pre>&lt;head&gt;</pre>
+        <pre>    &lt;meta charset=&quot;UTF-8&quot;&gt;</pre>
+        <pre>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</pre>
+        <pre>    &lt;title&gt;RadioButton example | Alexander Tags&lt;/title&gt;</pre>
+        <pre>    &lt;script src=&quot;https://alexanderkam2.github.io/download/AlexanderTags/RadioButton/script.js&quot;&gt;&lt;/script&gt;</pre>
+        <pre>&lt;/head&gt;</pre>
+        <pre>&lt;body&gt;</pre>
+        <pre>    &lt;div class=&quot;main&quot;&gt;</pre>
+        <pre>        &lt;h3&gt;RadioButton&lt;/h3&gt;</pre>
+        <pre>        &lt;radio selected=&quot;0&quot; label=&quot;Select language: &quot; id=&quot;radiobutton-1&quot;&gt;</pre>
+        <pre>            &lt;radiobutton label=&quot;JavaScript&quot;&gt;&lt;/radiobutton&gt;</pre>
+        <pre>            &lt;radiobutton label=&quot;Python&quot;&gt;&lt;/radiobutton&gt;</pre>
+        <pre>            &lt;radiobutton label=&quot;PHP&quot;&gt;&lt;/radiobutton&gt;</pre>
+        <pre>        &lt;/radio&gt;</pre>
+        <pre>        &lt;button onclick=&quot;checkRadio()&quot;&gt;Check&lt;/button&gt;</pre>
+        <pre>    &lt;/div&gt;</pre>
+        <pre>    &lt;script&gt;</pre>
+        <pre>        function checkRadio() {</pre>
+        <pre>            const radiovalue = getRadioValue('radiobutton-1');</pre>
+        <pre>            const values = [&quot;JavaScript&quot;, &quot;Python&quot;, &quot;PHP&quot;];</pre>
+        <pre>            alert(&quot;Selected: &quot; + values[radiovalue]);</pre>
+        <pre>        }</pre>
+        <pre>    &lt;/script&gt;</pre>
+        <pre>&lt;/body&gt;</pre>
+        <pre>&lt;/html&gt;</pre>
+    </code>
+</body>
+</html>

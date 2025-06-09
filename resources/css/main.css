@@ -35,8 +35,8 @@ header .placeholder {
 }
 
 .main {
-    background: #0d1f23;
     color: #afb3b7;
+    padding: 10px;
 }
 
 .menu {
@@ -54,17 +54,60 @@ header .placeholder {
 .title-box {
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #5a636a;
+    margin-bottom: 10px;
+}
+
+.title-box span {
+    font-size: 25px;
 }
 
 .link-box {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .link-box img {
     height: 32px;
     margin-right: 4px;
+}
+
+a {
+    color: #afb3b7;
+}
+
+.code-box {
+    background-color: #0D1F23;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.code-box span {
+    margin: 4px;
+}
+
+.code-box hr {
+    margin: 0px;
+}
+
+.code-box iframe {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.example-frame {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
 }
 
 @keyframes slidein {
