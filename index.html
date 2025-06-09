@@ -9,15 +9,34 @@
 </head>
 <body>
     <header>
-        <div class="branding">
-            <span>Alexander </span><span class="super">Kam</span>
+        <div class="menubutton" onclick="menuButtonClick()">
+            <img src="/resources/img/menu.svg" alt="menu">
         </div>
-        <nav>
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="https://github.com/AlexanderKam2/">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="branding">
+            <span>Alexander Kam</span>
+        </div>
+        <div class="placeholder">
+            <input type="hidden">
+        </div>
     </header>
+    <div class="main">
+        
+    </div>
+    <div class="menu">
+        <div class="title-box">
+            <div class="closebutton" onclick="menuCloseButtonClick()">
+                <img src="/resources/img/close.svg" alt="menu">
+            </div>
+            <span>Main menu</span>
+        </div>
+        <div class="link-box">
+            <img src="/resources/img/telegram.svg" alt="telegram">
+            <span>Telegram</span>
+        </div>
+        <div class="link-box">
+            <img src="/resources/img/github.svg" alt="telegram">
+            <span>GitHub</span>
+        </div>
+    </div>
 </body>
 </html>
