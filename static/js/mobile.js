@@ -43,6 +43,7 @@ window.onload = function () {
                 link_div.style.cursor = "pointer";
                 links.appendChild(link_div);
             }
+            articles_div.innerHTML = articles_div.innerHTML + "<a href=\"/space/articles/\">Все статьи</a>";
         })
         .catch(error => {
             console.error('Ошибка:', error);
