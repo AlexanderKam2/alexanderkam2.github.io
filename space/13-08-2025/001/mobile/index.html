@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFS Experiments | Kamishanov Space Missions</title>
+    <link rel="stylesheet" href="/static/css/mobile.css">
+    <link rel="icon" href="/static/img/logo.png" type="image/png">
+    <script src="/static/js/mobile.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="menuOn()">
+            <img src="/static/img/menu.png" alt="menu">
+        </div>
+        <div class="header-logotype" onclick="redirect('/mobile')">
+            <img src="/static/img/logo.png" alt="logo">
+        </div>
+        <div class="menu-icon">
+            <input type="hidden" name="noname">
+        </div>
+    </header>
+    <main>
+        <div class="heading" style="background-image: url(/static/img/headings/heading-1.jpg);">
+            <div class="header-content">
+                <span class="heading-h">Spaceflight Simulator</span>
+                <br>
+                <span class="heading-m">Параметры топливных двигателей</span>
+            </div>
+        </div>
+        <h3>Сведения о двигателях, указанные в игре</h3>
+        <iframe src="table0.html" frameborder="0"></iframe>
+        <h3>Сведения, полученные экспериментальным путём</h3>
+        <p>Мы вывели следующую формулу расчёта расхода топлива двигателем:</p>
+        <div class="formule">
+            <span>c=</span>
+            <div id='fraction'>
+                <div id='numerator'>
+                    m
+                </div>
+                <div id='denominator'>
+                    t
+                </div>
+            </div>
+        </div>
+        <p>Где: <br>c - расход топлива; <br>t - время горения топлива при тяге 100% (в секундах); <br>m - масса использованного топлива за время t (в тоннах).</p>
+        <p>Таким образом, мы можем вычислить расход каждого из вышеперечисленных двигателей, создав экспериментальную ракету, что я и сделал. Результаты вы можете видеть в моей следующей таблице:</p>
+        <iframe src="table1.html" frameborder="0"></iframe>
+    </main>
+    <div class="menu-box" style="display: none">
+        <div class="menu-header">
+            <img src="/static/img/back.png" alt="back" onclick="menuOff()">
+            <span>Меню сайта</span>
+        </div>
+        <div class="mobMenu" id="js-menu"></div>
+    </div>
+</body>
+</html>

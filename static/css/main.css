@@ -24,7 +24,7 @@ body {
 
 header {
     background: #241e2050;
-    max-width: 1000px;
+    width: 1000px !important;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
@@ -46,7 +46,7 @@ header .branding span {
 
 main {
     background: #241e2090;
-    max-width: 1000px;
+    width: 1000px !important;
     padding: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
