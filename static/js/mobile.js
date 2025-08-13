@@ -3,8 +3,8 @@ function redirect(url) {
 }
 
 function IsMobile() {
-    const width = document.body.clientWidth;
-    return width < 1000;
+    const viewportWidth = window.innerWidth;
+    return viewportWidth < 1000;
 }
 
 function menuOn() {
@@ -20,7 +20,6 @@ function menuOff() {
 }
 
 window.onload = function () {
-    if (!IsMobile()) {redirect("..")}
     const header = document.getElementsByTagName("header")[0];
     const main = document.getElementsByTagName("main")[0];
 
@@ -48,4 +47,8 @@ window.onload = function () {
         .catch(error => {
             console.error('Ошибка:', error);
         });
+}
+
+if (!IsMobile()) {
+    redirect("..");
 }

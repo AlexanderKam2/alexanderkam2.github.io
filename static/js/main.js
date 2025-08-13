@@ -3,8 +3,8 @@ function redirect(url) {
 }
 
 function IsMobile() {
-    const width = document.body.clientWidth;
-    return width < 1000;
+    const viewportWidth = window.innerWidth;
+    return viewportWidth < 1000;
 }
 
 window.onload = function () {
@@ -29,7 +29,9 @@ window.onload = function () {
             .catch(error => {
                 console.error('Ошибка:', error);
             });
-    } else {
-        redirect(window.location.href + "mobile");
     }
+}
+
+if (IsMobile()) {
+    redirect(window.location.href + "mobile");
 }
