@@ -54,6 +54,10 @@ main {
     border-radius: 10px;
 }
 
+a {
+    color: #fff;
+}
+
 table {
     border-collapse: collapse;
     text-align: start;
@@ -85,6 +89,7 @@ td, th {
     border-bottom: 2px solid #ffffff00;
     cursor: pointer;
     user-select: none;
+    margin-right: 10px;
     transition: all .1s;
 }
 

@@ -1,3 +1,4 @@
 [
-    {"name": "Главная", "href": "/space/"}
+    {"name": "Главная", "href": "/space/"},
+    {"name": "Статьи", "href": "/space/articles/"}
 ]

@@ -43,6 +43,10 @@ main {
     padding: 4px;
 }
 
+a {
+    color: #fff;
+}
+
 table {
     border-collapse: collapse;
     text-align: start;
