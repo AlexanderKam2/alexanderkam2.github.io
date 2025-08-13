@@ -1,0 +1,112 @@
+html {
+    width: 100%;
+}
+
+body {
+    font: 20px Tahoma;
+    color: #fff;
+    width: 100%;
+    background-image: url(/static/img/background.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+header {
+    background: #241e2050;
+    max-width: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+header .branding {
+    display: flex;
+    align-items: center;
+}
+
+header .branding img {
+    max-height: 100px;
+}
+
+header .branding span {
+    font: 36px "Impact";
+
+}
+
+main {
+    background: #241e2090;
+    max-width: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: start;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #FF8630;
+    padding: 14px;
+    vertical-align: super;
+    line-height: 1.2;
+}
+
+.formule {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    border-bottom: 2px solid #ffffff00;
+    cursor: pointer;
+    user-select: none;
+    transition: all .1s;
+}
+
+.link:hover {
+    border-bottom: 2px solid #ffffffff;
+}
+
+#fraction {
+    width: auto;
+    text-align: center;
+}
+
+#fraction #numerator {
+    vertical-align: bottom;
+    border-bottom: 2px solid #fff;
+}
+
+#fraction #denominator {
+    vertical-align: top;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("/static/ttf/impact.ttf");
+}

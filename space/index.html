@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFS Experiments | Kamishanov Space Missions</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="icon" href="/static/img/logo.png" type="image/png">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <div class="branding">
+                <img src="/static/img/logo512.png" alt="KSM logo">
+                <span>Kamishanov Space Missions</span>
+            </div>
+            <div class="links"></div>
+        </header>
+    </div>
+    <div class="flex-container">
+        <main>
+            <h1>Spaceflight Simulator</h1>
+            <h2>Параметры топливных двигателей</h2>
+            <h3>Сведения о двигателях, указанные в игре</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Наименование двигателя</td>
+                        <td>Масса</td>
+                        <td>Тяга</td>
+                        <td>Удельный импульс</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Двигатель Титан</td>
+                        <td>12т</td>
+                        <td>400т</td>
+                        <td>240с</td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Ястреб</td>
+                        <td>3.5т</td>
+                        <td>120т</td>
+                        <td>240с</td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Рубеж</td>
+                        <td>6т</td>
+                        <td>100т</td>
+                        <td>290с</td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Храбрый</td>
+                        <td>2т</td>
+                        <td>40т</td>
+                        <td>280с</td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Колибри</td>
+                        <td>0.5т</td>
+                        <td>15т</td>
+                        <td>260с</td>
+                    </tr>
+                    <tr>
+                        <td>Двигатели РСУ</td>
+                        <td>0.05т</td>
+                        <td>1.5т</td>
+                        <td>120с</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Сведения, полученные экспериментальным путём</h3>
+            <p>Мы вывели следующую формулу расчёта расхода топлива двигателем:</p>
+            <div class="formule">
+                <span>c=</span>
+                <div id='fraction'>
+                    <div id='numerator'>
+                        m
+                    </div>
+                    <div id='denominator'>
+                        t
+                    </div>
+                </div>
+            </div>
+            <p>Где: <br>c - расход топлива; <br>t - время горения топлива при тяге 100% (в секундах); <br>m - масса использованного топлива за время t (в тоннах).</p>
+            <p>Таким образом, мы можем вычислить расход каждого из вышеперечисленных двигателей, создав экспериментальную ракету, что я и сделал. Результаты вы можете видеть в моей следующей таблице:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Наименование двигателя</td>
+                        <td>Время горения топлива</td>
+                        <td>Исходный вес топлива</td>
+                        <td>Коэффицент расхода топлива</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Двигатель Титан</td>
+                        <td>32.6с</td>
+                        <td>54т</td>
+                        <td>
+                            <div class="formule">
+                                <span>~1.66</span>
+                                <div id='fraction'>
+                                    <div id='numerator'>
+                                        т
+                                    </div>
+                                    <div id='denominator'>
+                                        с
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Ястреб</td>
+                        <td>36.2с</td>
+                        <td>18т</td>
+                        <td>
+                            <div class="formule">
+                                <span>~0.5</span>
+                                <div id='fraction'>
+                                    <div id='numerator'>
+                                        т
+                                    </div>
+                                    <div id='denominator'>
+                                        с
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Рубеж</td>
+                        <td>~52.5с</td>
+                        <td>18т</td>
+                        <td>
+                            <div class="formule">
+                                <span>~0.34</span>
+                                <div id='fraction'>
+                                    <div id='numerator'>
+                                        т
+                                    </div>
+                                    <div id='denominator'>
+                                        с
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Храбрый</td>
+                        <td>~31.7с</td>
+                        <td>4.5т</td>
+                        <td>
+                            <div class="formule">
+                                <span>~0.14</span>
+                                <div id='fraction'>
+                                    <div id='numerator'>
+                                        т
+                                    </div>
+                                    <div id='denominator'>
+                                        с
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Двигатель Калибри</td>
+                        <td>~78.27с</td>
+                        <td>4.5т</td>
+                        <td>
+                            <div class="formule">
+                                <span>~0.06</span>
+                                <div id='fraction'>
+                                    <div id='numerator'>
+                                        т
+                                    </div>
+                                    <div id='denominator'>
+                                        с
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
