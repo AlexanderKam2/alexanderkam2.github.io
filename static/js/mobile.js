@@ -43,7 +43,6 @@ window.onload = function () {
                 link_div.style.cursor = "pointer";
                 links.appendChild(link_div);
             }
-            articles_div.innerHTML = articles_div.innerHTML + "<a href=\"/space/articles/\">Все статьи</a>";
         })
         .catch(error => {
             console.error('Ошибка:', error);
@@ -62,6 +61,7 @@ window.onload = function () {
                     article_div.innerHTML = "<div class=\"header-content\"><span class=\"heading-h\">" + article.heading + "</span><br><span class=\"heading-m\">" + article.theme + "</span></div>";
                     articles_div.appendChild(article_div);
                 }
+                articles_div.innerHTML = articles_div.innerHTML + "<a href=\"/space/articles/\">Все статьи</a>";
             })
             .catch(error => {
                 console.error('Ошибка:', error);
