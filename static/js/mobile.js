@@ -53,6 +53,7 @@ window.onload = function () {
         fetch('/articles.json')
             .then(response => response.json())
             .then(data => {
+                data.reverse();
                 for (const article of data.slice(-5)) {
                     const article_div = document.createElement("div");
                     article_div.setAttribute("class", "heading");
@@ -73,6 +74,7 @@ window.onload = function () {
         fetch('/articles.json')
             .then(response => response.json())
             .then(data => {
+                data.reverse();
                 for (const article of data) {
                     const article_div = document.createElement("div");
                     article_div.setAttribute("class", "heading");
