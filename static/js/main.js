@@ -36,9 +36,11 @@ window.onload = function () {
         fetch('/articles.json')
             .then(response => response.json())
             .then(data => {
+                data.reverse();
                 for (const article of data.slice(-5)) {
                     const article_div = document.createElement("div");
                     article_div.setAttribute("class", "heading");
+                    article_div.setAttribute("link", "yes");
                     article_div.setAttribute("onclick", "redirect('" + article.href + "')")
                     article_div.setAttribute("style", "background-image: url(" + article.image + "); cursor: pointer;")
                     article_div.innerHTML = "<div class=\"header-content\"><span class=\"heading-h\">" + article.heading + "</span><br><span class=\"heading-m\">" + article.theme + "</span></div>";
@@ -56,9 +58,11 @@ window.onload = function () {
         fetch('/articles.json')
             .then(response => response.json())
             .then(data => {
+                data.reverse();
                 for (const article of data) {
                     const article_div = document.createElement("div");
                     article_div.setAttribute("class", "heading");
+                    article_div.setAttribute("link", "yes");
                     article_div.setAttribute("onclick", "redirect('" + article.href + "')")
                     article_div.setAttribute("style", "background-image: url(" + article.image + "); cursor: pointer;")
                     article_div.innerHTML = "<div class=\"header-content\"><span class=\"heading-h\">" + article.heading + "</span><br><span class=\"heading-m\">" + article.theme + "</span></div>";
