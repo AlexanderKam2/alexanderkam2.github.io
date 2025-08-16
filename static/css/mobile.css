@@ -146,6 +146,7 @@ iframe {
     align-items: center;
     cursor: pointer;
     user-select: none;
+    margin-bottom: 10px;
 }
 
 .drive-link img {
@@ -154,6 +155,30 @@ iframe {
 }
 
 .drive-link small {
+    font-size: 14px;
+}
+
+.sfs-share {
+    display: flex;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.sfs-share img {
+    width: 32px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.sfs-share small {
     font-size: 14px;
 }
 

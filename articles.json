@@ -1,4 +1,5 @@
 [
     {"heading": "Spaceflight Simulator", "theme": "Параметры топливных двигателей", "href": "/space/13-08-2025/001/", "image": "/static/img/headings/heading-1.jpg"},
-    {"heading": "Туториал по SFS", "theme": "Урок 1: Первая ракета", "href": "/space/14-08-2025/001/", "image": "/static/img/headings/heading-2.jpg"}
+    {"heading": "Туториал по SFS", "theme": "Урок 1: Первая ракета", "href": "/space/14-08-2025/001/", "image": "/static/img/headings/heading-2.jpg"},
+    {"heading": "Туториал по SFS", "theme": "Урок 2: На луну!", "href": "/space/15-08-2025/001/", "image": "/static/img/headings/heading-3.jpg"}
 ]

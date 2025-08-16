@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туториал по SFS | Kamishanov Space Missions</title>
+    <link rel="stylesheet" href="/static/css/mobile.css">
+    <link rel="icon" href="/static/img/logo.png" type="image/png">
+    <script src="/static/js/mobile.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="menuOn()">
+            <img src="/static/img/menu.png" alt="menu">
+        </div>
+        <div class="header-logotype" onclick="redirect('/mobile')">
+            <img src="/static/img/logo.png" alt="logo">
+        </div>
+        <div class="menu-icon">
+            <input type="hidden" name="noname">
+        </div>
+    </header>
+    <main style="min-height: 776px;">
+            <div class="heading" style="background-image: url(/static/img/headings/heading-3.jpg);">
+                <div class="header-content">
+                    <span class="heading-h">Туториал по SFS</span>
+                    <br>
+                    <span class="heading-m">Урок 2: На луну!</span>
+                </div>
+            </div>
+            <p>И снова здравствуйте! Приветствую вас на втором уроке курса по игре Spaceflight Simulator. Сегодня мы не будем разделяться на разные версии игры, так как основы мы уже прошли.</p>
+            <h2>Теория</h2>
+            <p>В прошлом уроке мы поговорили о ступенях, и сейчас я предлагаю вам взглянуть на боковые сепараторы — детали, позволяющие добавлять к ракете боковые блоки.</p>
+            <p>Боковые блоки позволяют создавать более тяжёлые ракеты-носители, например, для доставки спутников на орбиту земли или отправки марсохода на Марс. По окончании своей работы, боковые блоки также отделяются от ракеты, и сгорают в атмосфере. Давайте соберём ракету с такими блоками и отправим её на луну!</p>
+            <h2>Практика</h2>
+            <p>Для начала, я покажу вам одну кнопку, которая откроет больше деталей, чтобы вы могли делать ракеты крупнее и круче.</p>
+            <p>Нажмите на кнопку слева сверху в виде трёх полос в сборочном цехе. Появятся различные разделы с зап. частями. Если у вас бесплатная версия, вам будет доступна только часть из них, но этого также хватит для нашей ракеты на луну. Эту ракету показал мне один друг, и мне она понравилась (я пользуюсь ей до сих пор). Соберём её по видео:</p>
+            <div class="drive-link" onclick="redirect('https:\/\/disk.yandex.ru/i/3FvQaMKBiXC61g')">
+                <div class="icon"><img src="/static/img/ya_disk.png" alt="ya disk icon"></div>
+                <div class="drive-title">
+                    <span>Сборка ракеты</span><br>
+                    <small>Смотреть на Яндекс Диске</small>
+                </div>
+            </div>
+            <div class="sfs-share" onclick="redirect('https:\/\/sharing.spaceflightsimulator.app/rocket/DadozHqLEfCMjtPseAeipw')">
+                <div class="icon"><img src="/static/img/sfs_icon.jfif" alt="sfs app icon"></div>
+                <div class="sfs-title">
+                    <span>Чертёж ракеты</span><br>
+                    <small>Ссылка sharing.spaceflightsimulator.app</small>
+                </div>
+            </div>
+            <p>Как вы видите, я добавил в нашу ракету четыре двигателя РСУ (RCS), они предназначены для манёвров в космосе (на телефоне система РСУ включается при нажатии на двигатель).</p>
+            <p>Ну что, полетели!</p>
+            <div class="drive-link" onclick="redirect('https:\/\/disk.yandex.ru/i/tHwWHiljy1US_g')">
+                <div class="icon"><img src="/static/img/ya_disk.png" alt="ya disk icon"></div>
+                <div class="drive-title">
+                    <span>Полёт на луну</span><br>
+                    <small>Смотреть на Яндекс Диске</small>
+                </div>
+            </div>
+            <h2>Конец второго урока</h2>
+    </main>
+    <div class="menu-box" style="display: none">
+        <div class="menu-header">
+            <img src="/static/img/back.png" alt="back" onclick="menuOff()">
+            <span>Меню сайта</span>
+        </div>
+        <div class="mobMenu" id="js-menu"></div>
+    </div>
+</body>
+</html>
